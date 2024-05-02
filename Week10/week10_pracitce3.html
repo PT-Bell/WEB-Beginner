@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week10_practice3</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        div{
+            white-space: normal;
+        }
+        body{
+            margin:10px auto;
+            width: 556px;
+            overflow: hidden;
+            border:1px solid black;
+        }
+        #top{
+            width: 100%;
+            background: green;
+            position: relative;
+        }
+        #center{
+            position: absolute;
+            width: 150px;
+            height:90px;
+            left:50%;
+            top:50%;
+            background: orange;
+            margin-left:-75px;
+            margin-top:-45px;           
+            text-overflow:clip;
+        }
+        #middle {
+            display: flex;  
+        }
+        #bottom{
+            width: 100%;
+            background: purple;
+        }
+        #left{
+            width: 150px;
+            background: red;
+        }
+        #right{
+            width: 406px;
+            background: blue;
+        }
+        #container{
+            width: 400px; height: 300px;
+            border: 3px solid black;
+            overflow: hidden;
+            position: relative;
+            background: white;
+        }
+        div.circle{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50%; 
+        }
+        #red {
+            background: red;
+            left: 20px; top: 20px;
+        }
+        #green {
+            background: green;
+            right: 20px; top: 20px;
+        }
+        #blue {
+            background: blue;
+            right: 20px; bottom: 20px;
+        }
+        #yellow {
+            background: yellow;
+            left: 20px; bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div id="center">요소의 중앙 배치ㅔㅐㅂ쟈데ㅐ뱢데ㅐ뱢데ㅐㅑㅂㅈ데ㅐㅑ</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies magna non ante bibendum sagittis. Nam commodo lacus sodales ante tempor bibendum id id mauris. Sed ut venenatis dui. Nulla in eleifend ante, sed tincidunt odio. Fusce suscipit sapien metus, eget semper sem semper ac. Nunc porttitor, felis a blandit laoreet, tellus purus efficitur dui, a cursus lectus augue id ante. Donec dolor nunc, sollicitudin et elementum vel, maximus sit amet odio.
+        </p>
+    </div>
+    <div id="middle">
+        <div id="left">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies magna non ante bibendum sagittis. Nam commodo lacus sodales ante tempor bibendum id id mauris. Sed ut venenatis dui. Nulla in eleifend ante, sed tincidunt odio. Fusce suscipit sapien metus, eget semper sem semper ac. Nunc porttitor, felis a blandit laoreet, tellus purus efficitur dui, a cursus lectus augue id ante. Donec dolor nunc, sollicitudin et elementum vel, maximus sit amet odio. Praesent molestie gravida varius. Fusce dapibus congue 
+            </p>
+        </div>
+        <div id="right">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies magna non ante bibendum sagittis. Nam commodo lacus sodales ante tempor bibendum id id mauris. Sed ut venenatis dui. Nulla in eleifend ante, sed tincidunt odio. Fusce suscipit sapien metus, eget semper sem semper ac. Nunc porttitor, felis a blandit laoreet, tellus purus efficitur dui, a cursus lectus augue id ante. Donec dolor nunc, sollicitudin et elementum vel, 
+            </p>
+            <div id="container">
+                <div id="red" class="circle"></div>
+                <div id="green" class="circle"></div>
+                <div id="blue" class="circle"></div>
+                <div id="yellow" class="circle"></div>
+            </div>
+            <p>
+                 maximus sit amet odio. Praesent molestie gravida varius. Fusce dapibus congue suscipit. Donec eleifend imperdiet congue. Donec luctus vulputate orci id pharetra. Vivamus dictum mauris non est volutpat elementum. Nullam facilisis justo lectus, at pretium justo rhoncus quis. Nam felis nunc, sollicitudin a sem eu, sollicitudin cursus velit. Mauris sit amet lacinia sem. Integer at ornare lectus.
+            </p>
+        </div>
+    </div>
+    <div id="bottom">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies magna non ante bibendum sagittis. Nam commodo lacus sodales ante tempor bibendum id id mauris. Sed ut venenatis dui. Nulla in eleifend ante, sed tincidunt odio. Fusce suscipit sapien metus, eget semper sem semper ac. Nunc porttitor, felis a blandit laoreet, tellus purus efficitur dui, a cursus lectus augue id ante. Donec dolor nunc, sollicitudin et elementum vel, maximus sit amet odio. Praesent molestie gravida varius. Fusce dapibus congue suscipit. Donec eleifend imperdiet congue. Donec luctus vulputate orci id pharetra. Vivamus dictum mauris non est volutpat elementum. Nullam facilisis justo lectus, at pretium justo rhoncus quis. Nam felis nunc, sollicitudin a sem eu, sollicitudin cursus velit. Mauris sit amet lacinia sem. Integer at ornare lectus.
+    </div>
+</body>
+</html>
