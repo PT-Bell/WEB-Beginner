@@ -1,0 +1,3 @@
+@media screen and (max-width: 767px) and (orientation:portrait) { 
+    body { background-color: red; } 
+    } 

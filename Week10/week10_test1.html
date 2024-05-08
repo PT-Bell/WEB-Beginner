@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #menu {
+            width: 260px;
+            float: left;
+        }
+
+        @media screen and (max-width: 767px) {
+
+            /* 스마트폰 사이즈에서는 전부 해제합니다. */
+            body {
+                width: auto
+            }
+
+            #menu {
+                width: auto;
+                float: none;
+            }
+
+            #section {
+                width: auto;
+                float: none;
+            }
+        }
+
+        #section {
+            width: 600px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ornare tellus. In vel tempus libero.
+            Phasellus vulputate sem consequat, convallis tellus in, molestie nunc.
+        </p>
+    </div>
+</body>
+
+</html>
