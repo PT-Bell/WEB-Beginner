@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        window.onload = function() {
+            // h1 태그의 배경 색상을 변경합니다.
+            document.querySelector('h1').style.backgroundColor = 'red';
+            // h2 태그의 글자 색상을 변경합니다.
+            document.querySelector('h2').style.color = 'red';
+        };
+        */
+       /*
+        window.onload = function() {
+        let headers = document.querySelectorAll('h1');
+
+            for(let i = 0; i < headers.length; i++) {
+                let header = headers[i];
+                header.style.color = 'orange';
+                header.style.background = 'red';
+                header.innerHTML = 'From JavaScript';
+            }
+        };
+        */
+       /*
+        window.onload = function() {
+            //변수를 선언합니다.
+            let output = '';
+            for(let i =0; i < 10; i++) {
+                output += '<h1>Header - ' + i + '</h1>';
+            }
+
+            //문서 객체 내부의 글자를 변경합니다.
+            //document.body.textContent = output;
+            //innerHTML 속성을 사용합니다.
+            document.body.innerHTML = output;
+        }
+        */
+        </script>
+</head>
+
+<body>
+    <h3>DOM 객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+    <hr>
+    <p id="firstP" style ="color:blue; background:yellow;" onclick="this.style.color='teal">
+    이것은 <span style="color:red">문장입니다.</span>
+    </p>
+    <script>
+        var p = document.getElementById("firstP");
+        var text = "p.id = " + p.id + "\n";
+        text += "p.tagName = " + p.tagName + "\n";
+        text += "p.innerHTML = " + p.innerHTML + "\n";
+        text += "p.style.color = " + p.style.color + "\n";
+        text += "p.onclick = " + p.onclick + "\n";
+        text += "p.childElementCount = " + p.childElementCount + "\n";
+        text += "너비 = " + p.offsetWidth + "\n";
+        text += "높이 = " + p.offsetHeight + "\n";
+        alert(text);
+    </script>
+</body>
+
+</html>

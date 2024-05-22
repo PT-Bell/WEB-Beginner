@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,27 +22,73 @@
         alert(f(3));
         */
 
+        /*
         //콜백 함수
         function callTenTimes(callback) {
             for(let i = 0; i < 10; i++) {
                 callback();
             }
         }
-        /*
+        
         let fun = function() {
             alert('함수 호출');
         };
-        */
+        
         
         callTenTimes(
             function() {
                 alert('함수 호출');
             }
         );
-
+        */
+        /*
+        function buttonClick() {
+            alert('click');
+        }
+        */
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 문서 객체를 선택합니다.
+            let button = document.getElementById('button');
+            // 이벤트를 연결합니다.
+            button.onclick = function () {
+                // 기본 이벤트를 제거합니다.
+                return false;
+            };
+        }; 
     </script>
 </head>
+
 <body>
-    
+    <!--<button onclick="alert('click')">버튼</button>
+    <button onclick="buttonClick()">버튼</button>
+    -->
+    <a id="button" href="http://hanbit.co.kr">버튼</a>
+    <h3>
+        문자열 연산
+    </h3>
+    <hr>
+    <script>
+        var name = "dragon";
+        document.write(name == "dragon");
+        document.write("<br>");
+        document.write(name > "park");
+    </script>
+    <br><br>
+    <hr>
+    <h3>if-else를 이용한 학점 매기기</h3>
+    <hr>
+    <script>
+        var grade;
+        var score = prompt("웹프로그래밍 점수를 입력하세요",);
+        score = parseInt(score);
+        if(score >= 90)
+        document.write(score +"는 A입니다.");
+        if (score > 80 && score < 90)
+        document.write(score + "는 B입니다.");
+        if (score < 80)
+        document.write(score + "는 C입니다.")
+    </script>
 </body>
+
 </html>
