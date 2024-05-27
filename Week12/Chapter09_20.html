@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let triangle = '';
+
+        for (let i = 1; i <= 10; i++) { // 외부 반복문은 행을 제어
+            for (let j = 1; j <= i; j++) { // 내부 반복문은 각 행에서의 별의 수를 제어
+                triangle += '*';
+            }
+            triangle += '\n'; // 각 행이 끝날 때마다 줄바꿈 문자 추가
+        }
+
+        alert(triangle);
+
+    </script>
+</body>
+
+</html>

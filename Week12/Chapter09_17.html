@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateCylinderVolume(radius, height) {
+            const volume = Math.PI * radius * radius * height;  // 원기둥 부피 공식
+            return volume;
+        }
+
+        // 사용자 입력 받기
+        const radiusInput = prompt("반지름 입력 (cm):");
+        const heightInput = prompt("높이 입력 (cm):");
+
+        // 입력 값으로 부피 계산
+        const radius = parseFloat(radiusInput);
+        const height = parseFloat(heightInput);
+        const volume = calculateCylinderVolume(radius, height);
+
+        // 계산된 부피를 알림 창으로 표시
+        alert(`부피는 ${volume.toFixed(2)} .`);
+
+    </script>
+</body>
+
+</html>

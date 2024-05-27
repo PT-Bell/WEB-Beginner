@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function convertCmToFeetAndInches(cm) {
+            const inchesTotal = cm / 2.54;  // 센티미터를 인치로 변환
+            const feet = Math.floor(inchesTotal / 12);  // 총 인치를 12로 나누어 피트 수를 구함
+            const inches = inchesTotal % 12;  // 남은 인치 계산
+
+            return `${feet} feet, ${inches.toFixed(2)} inches`;
+        }
+
+        // 사용 예시:
+        const cmInput = prompt("CM 입력:");  // 사용자로부터 센티미터 입력 받기
+        const result = convertCmToFeetAndInches(parseFloat(cmInput));
+        alert(result);  // 결과를 알림 창으로 표시
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getZodiac(year) {
+            const zodiacs = ["원숭이", "닭", "개", "돼지", "쥐", "소", "호랑이", "토끼", "용", "뱀", "말", "양"];
+            return zodiacs[year % 12];
+        }
+
+        let birthYear = prompt("태어난 연도를 입력해주세요:", "예: 1995");
+
+        if (birthYear !== null && !isNaN(birthYear)) {
+            let zodiac = getZodiac(parseInt(birthYear));
+            alert(`당신의 띠는 ${zodiac}입니다.`);
+        } else {
+            alert("유효한 연도를 입력해주세요!");
+        }
+
+    </script>
+</body>
+
+</html>

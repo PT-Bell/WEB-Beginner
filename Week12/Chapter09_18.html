@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("네 자리 정수를 입력해주세요", "1000"); // 사용자로부터 네 자리 정수 입력 받기
+
+        if (input !== null && input.length === 4 && !isNaN(input)) { // 입력값 검증
+            let number = parseInt(input); // 입력값을 정수로 변환
+            let thousands = Math.floor(number / 1000); // 천의 자리 계산
+            let hundreds = Math.floor((number % 1000) / 100); // 백의 자리 계산
+            let tens = Math.floor((number % 100) / 10); // 십의 자리 계산
+            let ones = number % 10; // 일의 자리 계산
+
+            // 결과 출력
+            alert(`천의 자리: ${thousands}\n백의 자리: ${hundreds}\n십의 자리: ${tens}\n일의 자리: ${ones}`);
+        } else {
+            alert("유효한 네 자리 정수를 입력해주세요!");
+        }
+
+    </script>
+</body>
+
+</html>

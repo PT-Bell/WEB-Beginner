@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const book = {
+            이름: "C# 프로그래밍(2판)",
+            초판_발행: "2021년 1월 5일",
+            지은이: "윤인성",
+            펴낸이: "전태호",
+            펴낸곳: "한빛아카데미(주)",
+            책임편집: "김성무",
+            기획: "김성무",
+            편집: "정서린",
+            디자인: "최연희, 이아란"
+        };
+
+        let details = '';
+        for (let key in book) {
+            details += `${key}: ${book[key]}\n`; // 각 속성을 개행 문자와 함께 추가
+        }
+
+        alert(details);
+    </script>
+</body>
+
+</html>

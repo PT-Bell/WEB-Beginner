@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //이벤트를 연결합니다.
+        window.onload = function() {
+            //변수를 선언합니다.
+            var clock = document.getElementById('clock');
+            var cnt = 0;
+            //1초마다 함수를 실행합니다.
+            var timer = setInterval(function() {
+                cnt++;
+                var now = new Date();
+                clock.innerHTML = now.toString();
+
+                if(cnt == 5)
+                    clearInterval(timer);
+            }, 1000);
+        }; // timer라는 setInterval()을 생성한 뒤 clearInterval()을 통해 종료
+    </script>
+    <h1 id="clock"></h1>
+</body>
+</html>
