@@ -1,0 +1,120 @@
+HTML 소개
+기초
+태그
+속성
+frequency tags of html
+가장 많이 사용하는 태그들
+<head>
+<body>
+<html>
+<title>
+<meta>
+<div>
+<a>
+<script>
+<link>
+<img>
+<p> o
+<span>
+<li>
+<ul>
+<br> o
+<style> o
+<h1> ~ <h6> : 제목 태그
+<input>
+<form>
+<strong>
+<tr>
+<td>
+
+
+CSS
+1. <body>
+style =""
+
+</body>
+
+2. 
+<style> 
+    내부에 작성
+</style>
+
+- color
+a {
+    color:black;
+}
+
+<a style="color:black">
+
+선택자 : 나중에 나온 선택자의 영향이 더 크다.
+
+- class="saw"
+- id="active"
+ 
+id의 우선순위가 class보다 높음
+
+
+https://www.3schools.com/cssref/css_selectors.asp
+위 사이트에서 여러 선택자들을 찾을 수 있음.
+
+
+
+CSS <style> 내부에서
+글자를 감싸고 있는 h1, a 태그의 스타일을 편집 가능하다.
+h1{
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+}
+a{
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+}
+
+위의 중복된 내용을 줄이기 위해 다음과 같은 방법도 가능하다.
+h1, a{
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+}
+
+border도 중복된다.
+h1, a{
+    border:5px solid red;
+}
+
+구글에 css box model을 검색하면
+상자의 크기를 조절할 때 사용하는 이름들을 알 수 있다.
+
+
+h1{
+    border은 박스이다.
+    아랫줄만 사용하고 싶다면
+    border-bottom을 사용.
+    공백이나 두께를 조절하고 싶다면 F12로 확인
+}
+
+ol{
+    border-right을 사용하여 오른쪽 세로줄 생성
+    width로 글상자의 크기 조절
+    margin으로 위아래 여백 조절
+    padding으로 왼쪽 여백 삭제
+}
+
+body{
+    margin:0으로 줄로 화면 채우기
+}
+
+@media(max or min-width)로 화면의 크기에 따른 미디어 쿼리 가능
+
+각 페이지에 style을 복사하여 페이지 동기화
+grid와 article이 적용된 div 잊지 않고 추가, 수정
+
+
+귀찮은 작업을 반복하는 것을 피하기 위한 명령어
+<link rel="stylesheet" href="style.css">
+style 태그 안의 내용을 style.css 파일에 저장하여 해당 파일의 css 명령어들을 불러온다.
+
+코드가 많아지면 각 홈페이지의 css파일의 내용이 무엇인지 일일이 알아보기 힘들다.
+- F12를 눌러 왼쪽 상단의 마우스 커서 버튼을 클릭해 수정하고 싶은 영역의 id명을 찾을 수 있다.
