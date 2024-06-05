@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test11Q</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+
+        <style>
+            div {
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>클릭</div>
+        <script>
+            var colors = ['red', 'green', 'blue']
+            var currentColor = 0
+            $('div').css({
+                backgroundColor: colors[currentColor]
+            }).click(function() {
+                $(this).css(currentColor, '+=1');
+            });
+        </script>
+    </body>
+</html>
